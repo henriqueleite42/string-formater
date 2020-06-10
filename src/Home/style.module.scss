@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #baceb0;
+  overflow: auto;
+}
+
+.textarea-container {
+  margin-top: 2em;
+  width: 50%;
+  max-height: 35vh;
+  border-radius: 0.3rem;
+}
+
+.input {
+  background-color: #649990;
+}
+
+.output {
+  background-color: #526667;
+  cursor: pointer;
+
+  textarea {
+    cursor: pointer;
+  }
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 1em;
+  color: white;
+
+  &::placeholder {
+    color: #ffffff90;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
